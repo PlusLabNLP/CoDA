@@ -1,8 +1,28 @@
-# 1. Data Augmentation
+# Contrastive Visual Data Augmentation
 
-## 1.1 CoDA Generation
+*[🌍 Project page](https://contrastive-visual-data-augmentation.github.io)| [📄 Paper](https://arxiv.org/abs/2502.17709)*
 
-### Configuration
+---
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Quick Start](#quick-start)
+- [Bibtex](#acknowledgements)
+
+---
+
+# Introduction
+
+Large multimodal models (LMMs) often struggle to recognize novel concepts, as they rely on pre-trained knowledge and have limited ability to capture subtle visual details. Domain-specific knowledge gaps in training also make them prone to confusing visually similar, commonly misrepresented, or low-resource concepts. To help LMMs better align nuanced visual features with language, improving their ability to recognize and reason about novel or rare concepts, we propose a Contrastive visual Data Augmentation (CoDA) strategy. CoDA extracts key contrastive textual and visual features of target concepts against the known concepts they are misrecognized as, and then uses multimodal generative models to produce targeted synthetic data. Automatic filtering of extracted features and augmented images is implemented to guarantee their quality, as verified by human annotators. We show the effectiveness and efficiency of CoDA on low-resource concept and diverse scene recognition datasets including INaturalist and SUN. We additionally collect NovelSpecies, a benchmark dataset consisting of newly discovered animal species that are guaranteed to be unseen by LMMs. LLaVA-1.6 1-shot updating results on these three datasets show CoDA significantly improves SOTA visual data augmentation strategies by 12.3% (NovelSpecies), 5.1% (SUN), and 6.0% (iNat) absolute gains in accuracy
+
+# Quick Start
+
+## 1. Data Augmentation
+
+### 1.1 CoDA Generation
+
+#### Configuration
 
 Create a `config.json` file in your working directory with the following structure:
 
@@ -26,7 +46,7 @@ Create a `config.json` file in your working directory with the following structu
 ```
 (see examples/config.json for reference).
 
-### Usage
+#### Usage
 
 Be sure to prepare the config.json file and put in under the working directory.
 
@@ -36,7 +56,7 @@ Run the script with the following arguments:
 python generation.py --prompts contrastive_visual_text --num_images 50 --num_test 5 --working_dir YOUR_WORKING_PATH
 ```
 
-#### Arguments
+##### Arguments
 
 - `--prompts`: Type of prompts to generate (default: "contrastive_visual_text")
 - `--num_images`: Number of images to generate per class (default: 50)
@@ -44,7 +64,7 @@ python generation.py --prompts contrastive_visual_text --num_images 50 --num_tes
 - `--working_dir`: Working directory path
 
 
-### Output Structure
+#### Output Structure
 
 ```
 working_dir/
@@ -57,9 +77,9 @@ working_dir/
 │               └── images/
 ```
 
-## 1.2 Naive Generation
+### 1.2 Naive Generation
 
-### Usage
+#### Usage
 
 ```bash
 python naive_augmentation.py --num_images 50 \
@@ -69,7 +89,7 @@ python naive_augmentation.py --num_images 50 \
                --SUN False
 ```
 
-#### Arguments
+##### Arguments
 
 - `--num_images`: Number of augmented images to generate (default: 50)
 - `--output_path`: Output directory path
@@ -77,7 +97,7 @@ python naive_augmentation.py --num_images 50 \
 - `--prompts`: Augmentation types to apply (default: "flip,crop")
 - `--SUN`: Flag for SUN dataset directory structure
 
-### Output Structure
+#### Output Structure
 
 ```
 output_path/
@@ -90,9 +110,9 @@ output_path/
 └── failed_pairs.json
 ```
 
-## 1.3 Verification
+### 1.3 Verification
 
-### Usage
+#### Usage
 
 Run the script with the required parameters:
 
@@ -100,7 +120,7 @@ Run the script with the required parameters:
 python verification.py --data_config path/to/config.json --output_path path/to/output.json --attributes_prompts text contrastive_text
 ```
 
-#### Arguments
+##### Arguments
 
 ```
 --data_config: Path to the JSON file containing dataset configuration.
@@ -110,7 +130,7 @@ python verification.py --data_config path/to/config.json --output_path path/to/o
 --attributes_prompts: List of attribute extraction methods (e.g., text, contrastive_text).
 ```
 
-#### Data Configuration File
+##### Data Configuration File
 
 The data_config.json file should contain:
 
@@ -129,7 +149,7 @@ The data_config.json file should contain:
 }
 ```
 
-### Output Format
+#### Output Format
 
 The output JSON file will contain verification scores and extracted attributes in the following format:
 
@@ -148,9 +168,9 @@ The output JSON file will contain verification scores and extracted attributes i
 }
 ```
 
-# 2. Model Updating
+## 2. Model Updating
 
-## Usage
+### Usage
 
 Run the script using the following command:
 
@@ -158,7 +178,7 @@ Run the script using the following command:
 python finetune.py [arguments]
 ```
 
-### Arguments
+#### Arguments
 
 - `--data_path`: Path to your dataset (default: "YOUR_DATA_PATH")
 - `--working_dir`: Working directory for outputs (default: "YOUR_WORKING_DIR")
@@ -171,7 +191,7 @@ python finetune.py [arguments]
 - `--prompt_types`: Comma-separated list of prompt types (default: "contrastive_visual,visual,text")
 - `--seed`: Random seed for reproducibility (default: 0)
 
-### Example
+#### Example
 
 ```bash
 python finetune.py \
@@ -184,7 +204,7 @@ python finetune.py \
   --prompt_types contrastive_visual,visual
 ```
 
-## Output Structure
+### Output Structure
 
 The script creates the following directory structure for each experiment:
 
@@ -200,9 +220,9 @@ working_dir/
         └── {num_images}_{num_epochs}.log
 ```
 
-# 3. Model Evaluation
+## 3. Model Evaluation
 
-## Usage
+### Usage
 
 ```bash
 python evaluation.py \
@@ -216,7 +236,7 @@ python evaluation.py \
   --zeroshot True
 ```
 
-## Configuration
+### Configuration
 
 Required `config.json` structure:
 
@@ -235,7 +255,7 @@ Required `config.json` structure:
 }
 ```
 
-## Output Structure
+### Output Structure
 
 Results are saved as JSON files containing confusion matrices:
 
@@ -246,4 +266,15 @@ Results are saved as JSON files containing confusion matrices:
     "class2": { "class1": 0.1, "class2": 0.9 }
   }
 }
+```
+
+# BibTex
+If you find our work helpful, please kindly cite our work :)
+```bash
+@article{zhou2025contrastive,
+          title={Contrastive Visual Data Augmentation},
+          author={Zhou, Yu and Li, Bingxuan and Tang, Mohan and Jin, Xiaomeng and Wu, Te-Lin and Huang, Kuan-Hao and Ji, Heng and Chang, Kai-Wei and Peng, Nanyun},
+          journal={arXiv preprint arXiv:2502.17709},
+          year={2025}
+        } 
 ```
