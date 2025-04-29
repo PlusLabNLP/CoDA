@@ -1,0 +1,156 @@
+{
+  "num_imgs_per_class": 80,
+  "models": [
+    "13b",
+    "34b"
+  ],
+  "prompts_types": [
+    "contrastive_visual",
+    "contrastive_text",
+    "contrastive_visual_text",
+    "crop",
+    "flip",
+    "armanda",
+    "text",
+    "visual",
+    "visual_text"
+  ],
+  "synthetic_images_path": "/data2/VDA_data/data/INAT/subset_1/synthetic_improved",
+  "real_images_path": "/data2/VDA_data/data/INAT/subset_1/train/",
+  "val_images_path": "/data2/VDA_data/data/INAT/subset_1/val",
+  "pairs": [
+    {
+      "ground_truth": "Puff Adder",
+      "confusing_class": "Timber Rattlesnake",
+      "rate_of_error": 0.26,
+      "ground_truth_full_name": "05110_Animalia_Chordata_Reptilia_Squamata_Viperidae_Bitis_arietans",
+      "confusing_class_full_name": "05116_Animalia_Chordata_Reptilia_Squamata_Viperidae_Crotalus_horridus"
+    },
+    {
+      "ground_truth": "Gopher Snake",
+      "confusing_class": "Eastern Rat Snake",
+      "rate_of_error": 0.22,
+      "ground_truth_full_name": "04953_Animalia_Chordata_Reptilia_Squamata_Colubridae_Pituophis_catenifer",
+      "confusing_class_full_name": "04946_Animalia_Chordata_Reptilia_Squamata_Colubridae_Pantherophis_alleghaniensis"
+    },
+    {
+      "ground_truth": "Timber Rattlesnake",
+      "confusing_class": "Gopher Snake",
+      "rate_of_error": 0.2399999999999999,
+      "ground_truth_full_name": "05116_Animalia_Chordata_Reptilia_Squamata_Viperidae_Crotalus_horridus",
+      "confusing_class_full_name": "04953_Animalia_Chordata_Reptilia_Squamata_Colubridae_Pituophis_catenifer"
+    },
+    {
+      "ground_truth": "Common Chameleon",
+      "confusing_class": "Cape Dwarf Chameleon",
+      "rate_of_error": 0.44,
+      "ground_truth_full_name": "04893_Animalia_Chordata_Reptilia_Squamata_Chamaeleonidae_Chamaeleo_chamaeleon",
+      "confusing_class_full_name": "04892_Animalia_Chordata_Reptilia_Squamata_Chamaeleonidae_Bradypodion_pumilum"
+    },
+    {
+      "ground_truth": "Rough Earthsnake",
+      "confusing_class": "Eastern Rat Snake",
+      "rate_of_error": 0.5800000000000003,
+      "ground_truth_full_name": "04910_Animalia_Chordata_Reptilia_Squamata_Colubridae_Haldea_striatula",
+      "confusing_class_full_name": "04946_Animalia_Chordata_Reptilia_Squamata_Colubridae_Pantherophis_alleghaniensis"
+    },
+    {
+      "ground_truth": "Rough Earthsnake",
+      "confusing_class": "Smooth Earth Snake",
+      "rate_of_error": 0.26,
+      "ground_truth_full_name": "04910_Animalia_Chordata_Reptilia_Squamata_Colubridae_Haldea_striatula",
+      "confusing_class_full_name": "04976_Animalia_Chordata_Reptilia_Squamata_Colubridae_Virginia_valeriae"
+    },
+    {
+      "ground_truth": "Prairie Lizard",
+      "confusing_class": "Southeastern Five-lined Skink",
+      "rate_of_error": 0.6000000000000001,
+      "ground_truth_full_name": "05045_Animalia_Chordata_Reptilia_Squamata_Phrynosomatidae_Sceloporus_consobrinus",
+      "confusing_class_full_name": "05078_Animalia_Chordata_Reptilia_Squamata_Scincidae_Plestiodon_inexpectatus"
+    },
+    {
+      "ground_truth": "Cape Dwarf Chameleon",
+      "confusing_class": "Common Chameleon",
+      "rate_of_error": 0.44,
+      "ground_truth_full_name": "04892_Animalia_Chordata_Reptilia_Squamata_Chamaeleonidae_Bradypodion_pumilum",
+      "confusing_class_full_name": "04893_Animalia_Chordata_Reptilia_Squamata_Chamaeleonidae_Chamaeleo_chamaeleon"
+    },
+    {
+      "ground_truth": "Khorat Blind Snake",
+      "confusing_class": "Smooth Earth Snake",
+      "rate_of_error": 0.28,
+      "ground_truth_full_name": "05100_Animalia_Chordata_Reptilia_Squamata_Typhlopidae_Indotyphlops_braminus",
+      "confusing_class_full_name": "04976_Animalia_Chordata_Reptilia_Squamata_Colubridae_Virginia_valeriae"
+    },
+    {
+      "ground_truth": "Adder",
+      "confusing_class": "Eastern Rat Snake",
+      "rate_of_error": 0.48,
+      "ground_truth_full_name": "05129_Animalia_Chordata_Reptilia_Squamata_Viperidae_Vipera_berus",
+      "confusing_class_full_name": "04946_Animalia_Chordata_Reptilia_Squamata_Colubridae_Pantherophis_alleghaniensis"
+    },
+    {
+      "ground_truth": "Smooth Earth Snake",
+      "confusing_class": "Eastern Rat Snake",
+      "rate_of_error": 0.5799999999999998,
+      "ground_truth_full_name": "04976_Animalia_Chordata_Reptilia_Squamata_Colubridae_Virginia_valeriae",
+      "confusing_class_full_name": "04946_Animalia_Chordata_Reptilia_Squamata_Colubridae_Pantherophis_alleghaniensis"
+    },
+    {
+      "ground_truth": "Great Plains Skink",
+      "confusing_class": "Southeastern Five-lined Skink",
+      "rate_of_error": 0.6200000000000001,
+      "ground_truth_full_name": "05080_Animalia_Chordata_Reptilia_Squamata_Scincidae_Plestiodon_obsoletus",
+      "confusing_class_full_name": "05078_Animalia_Chordata_Reptilia_Squamata_Scincidae_Plestiodon_inexpectatus"
+    },
+    {
+      "ground_truth": "Siberian Chipmunk",
+      "confusing_class": "Eastern Chipmunk",
+      "rate_of_error": 0.98,
+      "ground_truth_full_name": "04824_Animalia_Chordata_Mammalia_Rodentia_Sciuridae_Eutamias_sibiricus",
+      "confusing_class_full_name": "04851_Animalia_Chordata_Mammalia_Rodentia_Sciuridae_Tamias_striatus"
+    },
+    {
+      "ground_truth": "Star-nosed Mole",
+      "confusing_class": "Common Hedgehog",
+      "rate_of_error": 0.54,
+      "ground_truth_full_name": "04748_Animalia_Chordata_Mammalia_Eulipotyphla_Talpidae_Condylura_cristata",
+      "confusing_class_full_name": "04745_Animalia_Chordata_Mammalia_Eulipotyphla_Erinaceidae_Erinaceus_europaeus"
+    },
+    {
+      "ground_truth": "Short-beaked Echidna",
+      "confusing_class": "Common Hedgehog",
+      "rate_of_error": 0.3600000000000001,
+      "ground_truth_full_name": "04767_Animalia_Chordata_Mammalia_Monotremata_Tachyglossidae_Tachyglossus_aculeatus",
+      "confusing_class_full_name": "04745_Animalia_Chordata_Mammalia_Eulipotyphla_Erinaceidae_Erinaceus_europaeus"
+    },
+    {
+      "ground_truth": "Banded Mongoose",
+      "confusing_class": "American Badger",
+      "rate_of_error": 0.28,
+      "ground_truth_full_name": "04686_Animalia_Chordata_Mammalia_Carnivora_Herpestidae_Mungos_mungo",
+      "confusing_class_full_name": "04703_Animalia_Chordata_Mammalia_Carnivora_Mustelidae_Taxidea_taxus"
+    },
+    {
+      "ground_truth": "Banded Mongoose",
+      "confusing_class": "Common Hedgehog",
+      "rate_of_error": 0.22,
+      "ground_truth_full_name": "04686_Animalia_Chordata_Mammalia_Carnivora_Herpestidae_Mungos_mungo",
+      "confusing_class_full_name": "04745_Animalia_Chordata_Mammalia_Eulipotyphla_Erinaceidae_Erinaceus_europaeus"
+    },
+    {
+      "ground_truth": "Bat Falcon",
+      "confusing_class": "Summer Tanager",
+      "rate_of_error": 0.48,
+      "ground_truth_full_name": "03602_Animalia_Chordata_Aves_Falconiformes_Falconidae_Falco_rufigularis",
+      "confusing_class_full_name": "03726_Animalia_Chordata_Aves_Passeriformes_Cardinalidae_Piranga_rubra"
+    },
+    {
+      "ground_truth": "Bat Falcon",
+      "confusing_class": "Jackal Buzzard",
+      "rate_of_error": 0.22,
+      "ground_truth_full_name": "03602_Animalia_Chordata_Aves_Falconiformes_Falconidae_Falco_rufigularis",
+      "confusing_class_full_name": "03134_Animalia_Chordata_Aves_Accipitriformes_Accipitridae_Buteo_rufofuscus"
+    }
+  ]
+}
