@@ -296,7 +296,7 @@ Results are saved as JSON files containing confusion matrices:
 
 ### Download
 
-To download the NovelSpecies Dataset and our subsets of the iNaturalist and SUN datasets, please go to our [Huggingface Dataset](https://huggingface.co/datasets/uclanlp/CoDA). The dataset structure is:
+To download the NovelSpecies Dataset and our subsets of the [iNaturalist](https://github.com/visipedia/inat_comp/tree/master/2017) and [SUN](https://vision.princeton.edu/projects/2010/SUN/) datasets, please go to our [Huggingface Dataset](https://huggingface.co/datasets/uclanlp/CoDA). The dataset structure is:
 
 ```
 data/
@@ -329,9 +329,9 @@ data/
 If you find our work helpful, please kindly cite our work :)
 ```bash
 @article{zhou2025contrastive,
-          title={Contrastive Visual Data Augmentation},
-          author={Zhou, Yu and Li, Bingxuan and Tang, Mohan and Jin, Xiaomeng and Wu, Te-Lin and Huang, Kuan-Hao and Ji, Heng and Chang, Kai-Wei and Peng, Nanyun},
-          journal={arXiv preprint arXiv:2502.17709},
-          year={2025}
-        } 
+  title={Contrastive Visual Data Augmentation},
+  author={Zhou, Yu and Li, Bingxuan and Tang, Mohan and Jin, Xiaomeng and Wu, Te-Lin and Huang, Kuan-Hao and Ji, Heng and Chang, Kai-Wei and Peng, Nanyun},
+  journal={arXiv preprint arXiv:2502.17709},
+  year={2025}
+} 
 ```
