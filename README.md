@@ -148,7 +148,7 @@ The output JSON file will contain verification scores and extracted attributes i
 }
 ```
 
-# 2 Model Updating
+# 2. Model Updating
 
 ## Usage
 
@@ -200,7 +200,7 @@ working_dir/
         └── {num_images}_{num_epochs}.log
 ```
 
-# 3 Model Evaluation
+# 3. Model Evaluation
 
 ## Usage
 
