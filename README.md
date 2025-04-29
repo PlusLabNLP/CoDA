@@ -28,6 +28,13 @@
 </p>
 
 
+<p align="center">
+    <a href="https://contrastive-visual-data-augmentation.github.io/" target="_blank">
+        <img src="./assets/method.png" alt="CoDA" width="80%" height="80%" border="10" />
+    </a>
+</p>
+
+
 ## Table of Contents
 
 - [Introduction](#introduction)
