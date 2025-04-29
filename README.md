@@ -21,7 +21,7 @@
     <a href="https://tangmohan.github.io/tangmohan.pdf">Mohan Tang*</a>, 
     <a href="https://scholar.google.com/citations?user=Jd_tsuEAAAAJ">Xiaomeng Jin</a>, 
     <a href="https://telin0411.github.io/">Te-Lin Wu</a>, 
-    <a href="https://khhuang.me/">Kuan-Hao Huang</a>, 
+    <a href="https://khhuang.me/">Kuan-Hao Huang</a>, <br>
     <a href="https://blender.cs.illinois.edu/hengji.html">Heng Ji</a>, 
     <a href="https://web.cs.ucla.edu/~kwchang/">Kai-Wei Chang</a>, 
     <a href="https://violetpeng.github.io/">Nanyun Peng</a>
