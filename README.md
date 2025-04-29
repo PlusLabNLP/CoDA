@@ -1,6 +1,17 @@
-# Contrastive Visual Data Augmentation
+<h1 align="center">Contrastive Visual Data Augmentation</h1>
 
-*[🌍 Project page](https://contrastive-visual-data-augmentation.github.io)| [📄 Paper](https://arxiv.org/abs/2502.17709)*
+<p align="center">
+    <a href="https://arxiv.org/abs/2502.17709">
+        <img src="https://img.shields.io/badge/arXiv-2410.07166-B31B1B.svg?style=plastic&logo=arxiv" alt="arXiv">
+    </a>
+    <a href="https://contrastive-visual-data-augmentation.github.io/">
+        <img src="https://img.shields.io/badge/Website-EAI-purple?style=plastic&logo=Google%20chrome" alt="Website">
+    </a>
+    <a href="https://huggingface.co/datasets/uclanlp/CoDA" target="_blank">
+        <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=huggingface" alt="Download the EmbodiedAgentInterface Dataset from Hugging Face">
+    <a href="https://opensource.org/licenses/MIT">
+        <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=plastic" alt="License: MIT">
+    </a>
 
 ---
 
