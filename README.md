@@ -292,6 +292,39 @@ Results are saved as JSON files containing confusion matrices:
 }
 ```
 
+## 4. NovelSpecies Dataset
+
+### Download
+
+To download the NovelSpecies Dataset and our subsets of the iNaturalist and SUN datasets, please go to our [Huggingface Dataset](https://huggingface.co/datasets/uclanlp/CoDA). The dataset structure is:
+
+```
+data/
+├── train/
+│   └── iNaturalist/
+│   |   └── {class_name}
+│   |       └── images/
+│   └── NovelSpecies/
+│   |   └── {class_name}
+│   |       └── images/
+│   └── SUN/
+│       └── {class_name_first_letter}/
+│           └── {class_name}/
+│               └── images/
+├── val/
+│   └── iNaturalist/
+│   |   └── {class_name}/
+│   |       └── images/
+│   └── NovelSpecies/
+│   |   └── {class_name}/
+│   |       └── images/
+│   └── SUN/
+│       └── {class_name_first_letter}/
+│           └── {class_name}/
+│               └── images/
+```
+
+
 # BibTex
 If you find our work helpful, please kindly cite our work :)
 ```bash
