@@ -1,6 +1,6 @@
 <h1 align="center">Contrastive Visual Data Augmentation</h1>
 <p align="center">
-    <a>ICML 2025*</a>, 
+    <a>ICML 2025</a> 
 </p>
 
 
