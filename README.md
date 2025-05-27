@@ -1,11 +1,15 @@
 <h1 align="center">Contrastive Visual Data Augmentation</h1>
+<p align="center">
+    <a>ICML 2025*</a>, 
+</p>
+
 
 <p align="center">
     <a href="https://arxiv.org/abs/2502.17709">
         <img src="https://img.shields.io/badge/arXiv-2410.07166-B31B1B.svg?style=plastic&logo=arxiv" alt="arXiv">
     </a>
     <a href="https://contrastive-visual-data-augmentation.github.io/">
-        <img src="https://img.shields.io/badge/Website-EAI-purple?style=plastic&logo=Google%20chrome" alt="Website">
+        <img src="https://img.shields.io/badge/Website-CoDA-purple?style=plastic&logo=Google%20chrome" alt="Website">
     </a>
     <a href="https://huggingface.co/datasets/uclanlp/CoDA" target="_blank">
         <img src="https://img.shields.io/badge/Dataset-Download-yellow?style=plastic&logo=huggingface" alt="Download the EmbodiedAgentInterface Dataset from Hugging Face">
@@ -335,10 +339,13 @@ data/
 # BibTex
 If you find our work helpful, please kindly cite our work :)
 ```bash
-@article{zhou2025contrastive,
-  title={Contrastive Visual Data Augmentation},
-  author={Zhou, Yu and Li, Bingxuan and Tang, Mohan and Jin, Xiaomeng and Wu, Te-Lin and Huang, Kuan-Hao and Ji, Heng and Chang, Kai-Wei and Peng, Nanyun},
-  journal={arXiv preprint arXiv:2502.17709},
-  year={2025}
-} 
+@misc{zhou2025contrastivevisualdataaugmentation,
+      title={Contrastive Visual Data Augmentation}, 
+      author={Yu Zhou and Bingxuan Li and Mohan Tang and Xiaomeng Jin and Te-Lin Wu and Kuan-Hao Huang and Heng Ji and Kai-Wei Chang and Nanyun Peng},
+      year={2025},
+      eprint={2502.17709},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2502.17709}, 
+}
 ```
