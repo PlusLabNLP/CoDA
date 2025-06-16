@@ -339,13 +339,10 @@ data/
 # BibTex
 If you find our work helpful, please kindly cite our work :)
 ```bash
-@misc{zhou2025contrastivevisualdataaugmentation,
-      title={Contrastive Visual Data Augmentation}, 
-      author={Yu Zhou and Bingxuan Li and Mohan Tang and Xiaomeng Jin and Te-Lin Wu and Kuan-Hao Huang and Heng Ji and Kai-Wei Chang and Nanyun Peng},
-      year={2025},
-      eprint={2502.17709},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2502.17709}, 
-}
+@article{zhou2025contrastive,
+  title={Contrastive Visual Data Augmentation},
+  author={Zhou, Yu and Li, Bingxuan and Tang, Mohan and Jin, Xiaomeng and Wu, Te-Lin and Huang, Kuan-Hao and Ji, Heng and Chang, Kai-Wei and Peng, Nanyun},
+  journal={arXiv preprint arXiv:2502.17709},
+  year={2025}
+} 
 ```
